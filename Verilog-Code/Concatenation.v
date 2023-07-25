@@ -1,0 +1,8 @@
+module Concatenation(
+input [3:0] in1,
+input [27:0] in2,
+output reg [31:0] out);
+always @(*) begin
+out = {in1, in2};
+end
+endmodule
